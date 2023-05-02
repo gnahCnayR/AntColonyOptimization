@@ -14,15 +14,15 @@ Ant Colony Optimization (ACO) is a metaheuristic algorithm inspired by the behav
 The ACO algorithm is formulated as a probabilistic solution construction method, where the ants construct candidate solutions by following a set of decision rules. These rules are based on the pheromone levels and the heuristic information associated with the edges of the graph.
 
 Let's denote the graph as a set of nodes $N$ and a set of edges $E$. Each edge has an associated distance $d_{i,j}$ and a pheromone level $\tau_{i,j}$, where $i,j \in N$. Let $t$ denote the current iteration of the algorithm, and let $Q$ be a constant parameter that controls the pheromone deposit amount. The pheromone trail update rule for the edge $(i,j) \in E$ is given by:
-```
+
 $$\tau_{i,j}^{t+1} = (1 - \rho)\tau_{i,j}^t + \sum_{k=1}^{m} \Delta \tau_{i,j}^{k}$$
-```
+
 where $\rho$ is the evaporation rate, $m$ is the number of ants, and $\Delta \tau_{i,j}^{k}$ is the pheromone deposit made by ant $k$ on edge $(i,j)$.
 
 The ants construct candidate solutions by following a set of decision rules that are based on the pheromone levels and the heuristic information associated with the edges of the graph. Let $\eta_{i,j}$ denote the heuristic information associated with edge $(i,j)$, which is a measure of the desirability of traversing that edge based on some problem-specific criterion. The probability that ant $k$ chooses to move from node $i$ to node $j$ at time $t$ is given by:
-```
+
 $$p_{i,j}^{k,t} = \frac{\tau_{i,j}^\alpha (\eta_{i,j})^\beta}{\sum_{l \in allowed(i)} \tau_{i,l}^\alpha (\eta_{i,l})^\beta}$$
-```
+
 where $\alpha$ and $\beta$ are parameters that control the relative importance of the pheromone level and the heuristic information, respectively, and $allowed(i)$ is the set of nodes that are reachable from node $i$.
 
 The ants construct candidate solutions by iteratively applying the decision rules and building a solution incrementally. At each step, an ant chooses the next node to visit based on the probabilities given by the decision rules. The solution construction process continues until all the nodes have been visited, and a complete solution has been constructed.
