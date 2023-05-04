@@ -27,6 +27,10 @@ where $\alpha$ and $\beta$ are parameters that control the relative importance o
 
 The ants construct candidate solutions by iteratively applying the decision rules and building a solution incrementally. At each step, an ant chooses the next node to visit based on the probabilities given by the decision rules. The solution construction process continues until all the nodes have been visited, and a complete solution has been constructed.
 
+## Figures
+
+<img src="/images/acoExample.jpg" alt="Alt text" title="Figure 1. Ant Behavior in the Real World">
+
 ## Pros & Cons of Ant Colony Optimization
 ### Advantages
 
