@@ -29,7 +29,7 @@ The ants construct candidate solutions by iteratively applying the decision rule
 
 ## Figures
 
-<img src="/images/acoExample.jpg" alt="Alt text" title="Figure 1. Ant Behavior in the Real World">
+![Figure 1. Ant Behavior in the Real World]<img src="/images/acoExample.jpg" alt="Alt text" title="Figure 1. Ant Behavior in the Real World">
 
 ## Pros & Cons of Ant Colony Optimization
 ### Advantages
